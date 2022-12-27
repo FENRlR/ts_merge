@@ -36,7 +36,8 @@ for i in range(1, np):
         px = urllib.request.urlopen(s+str(i)+se)
         
     except Exception as h:
-        print("err : seq - %d" %i)
+        print("err : seq - %d\n" %i)
+        #print(h)
         break
     print("segment %d" %i)
     mpath.write(px.read())
