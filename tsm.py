@@ -29,7 +29,7 @@ os.chdir(e)
 print ("- all green")
 
 
-np = 10000 #뜰때까지 대충 처리
+np = 10000 #뜰때까지 대충 처리 - 이 방식이 맘에 안들면 아래를 참조
 mpath = open("ABP.mp4",'ab')
 for i in range(1, np):    
     try:
@@ -42,4 +42,18 @@ for i in range(1, np):
     print("segment %d" %i)
     mpath.write(px.read())
 mpath.close()
+
+"""
+##- EXTRA
+mpath = open("ABP.mp4",'ab')
+i=1
+px = lambda x:urllib.request.urlopen(s+str(x)+se
+while( px(i)) != null):
+    print("segment %d" % i)
+    mpath.write(px.read())
+    i +=1
+mpath.close()
+"""
+
+
 print(" - 완료")
