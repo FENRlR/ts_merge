@@ -45,13 +45,15 @@ mpath.close()
 
 """
 ##- EXTRA
-mpath = open("ABP.mp4",'ab')
-i=1
-px = lambda x:urllib.request.urlopen(s+str(x)+se)
-while( px(i)) != null):
-    print("segment %d" % i)
-    mpath.write(px.read())
-    i +=1
+mpath = open("ABP.mp4", 'ab')
+i = 1
+px = lambda x: urllib.request.urlopen(s + str(x) + se)
+npx = px(i)
+while npx != null:
+    print(f"segment {i}")
+    mpath.write(npx.read())
+    i += 1
+    npx = px(i)
 mpath.close()
 """
 
