@@ -49,7 +49,7 @@ mpath = open("ABP.mp4", 'ab')
 i = 1
 px = lambda x: urllib.request.urlopen(s + str(x) + se)
 npx = px(i)
-while npx != null:
+while npx is not None:
     print(f"segment {i}")
     mpath.write(npx.read())
     i += 1
